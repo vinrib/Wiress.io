@@ -22,6 +22,7 @@
 
     --box-shadow: 0 2rem 3rem var(--color-light);
 }
+/*-------------------DARK THEME VARIABLES -----------------------*/
 .dark-theme-variables {
     --color-background:#181a1e;
     --color-white: #202528;
@@ -101,7 +102,7 @@ b{
 .warning{
     color: var(--color-warning);
 }
-.container{
+.containerMain{
     display: grid;
     width: 96%;
     margin: 0 auto;
@@ -209,7 +210,7 @@ main .insights{
     gap: 1.6rem;
 }
 main .insights > div {
-    background: var(--color-white);
+ 
     padding: var(--card-padding);
     border-radius: var(--card-border-radius);
     margin-top: 1rem;
@@ -365,7 +366,7 @@ main .recent-orders a{
     align-items: center;
     justify-content: center;
 }
-#active{ /*Right theme, lado direito*/
+.active{ /*Right theme, lado direito*/
     background-color: var(--color-primary);
     color: white;
     border-radius: var(--border-radius-1);
@@ -402,7 +403,6 @@ main .recent-orders a{
     margin-bottom: 0.8rem;
 }
 .right .sales-analytics .item {
-    background: var(--color-background);
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -455,7 +455,7 @@ main .recent-orders a{
 /*=========MEDIA QUERIES - tablets e outros devices===========================================================================*/
 
 @media screen and (max-width: 1200px){
- .container{
+ .containerMain{
     width: 94%;
     grid-template-columns: 7rem auto 23rem;
  }
@@ -498,7 +498,7 @@ main .recent-orders a{
 }
 /*===============MEDIA QUERIES smartphones e tablets menores ====================================*/
 @media screen and (max-width:768px) {
-    .container{
+    .containerMain{
         width: 100%;
         grid-template-columns: 1fr;
     } 
